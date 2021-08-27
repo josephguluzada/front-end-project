@@ -1,0 +1,37 @@
+.button-primary {
+  padding: 1rem 1.7rem;
+  background-color: $color-tertiary;
+  border-radius: 5px;
+  color: $color-white;
+  margin-left: 20px;
+  white-space: nowrap;
+  &:hover {
+    background-color: #7460ef;
+  }
+}
+
+.button-primary-bigger {
+  display: inline-block;
+  padding: 1.3rem 2.5rem;
+  background-color: $color-tertiary;
+  border-radius: 5px;
+  color: $color-white;
+  white-space: nowrap;
+  &:hover {
+    background-color: #7460ef;
+  }
+}
+
+.button-secondary {
+  padding: 1rem 1.5rem;
+  border: 2px solid #322b5f;
+  background: none;
+  color: $color-white;
+  border-radius: 5px;
+  margin-left: 30px;
+  white-space: nowrap;
+
+  &:hover {
+    background-color: $color-secondary;
+  }
+}
