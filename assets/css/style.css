@@ -6766,8 +6766,20 @@ a {
   .button-secondary:hover {
     background-color: #18142e; }
 
+.button-explore {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  border: 1px solid #adaabf;
+  width: max-content; }
+  .button-explore:hover {
+    border-color: #fff;
+    background-color: rgba(255, 255, 255, 0.04);
+    color: #fff; }
+
 body {
-  background-color: #0f0d1e; }
+  background-color: #0f0d1e;
+  font-family: Inter, sans-serif; }
   body header {
     position: sticky;
     top: 0;
@@ -6841,6 +6853,74 @@ body {
       width: 95%; }
       #employing-section .paycheck .image img {
         width: 100%; }
+
+#feature-section {
+  background-color: #0f0d1e;
+  padding: 140px 80px; }
+  #feature-section .future-item-container {
+    padding: 120px 48px 120px 80px;
+    background-color: #18142e;
+    border-radius: 1rem;
+    margin-bottom: 120px; }
+    #feature-section .future-item-container .future-item-left {
+      padding-right: 80px; }
+      #feature-section .future-item-container .future-item-left h5.color-orange-pink {
+        margin-bottom: 16px;
+        font-family: Rajdhani, sans-serif;
+        color: #ff9a83;
+        font-size: 18px;
+        line-height: 1.5;
+        font-weight: 500;
+        text-align: left;
+        letter-spacing: 1.5px;
+        text-transform: uppercase; }
+      #feature-section .future-item-container .future-item-left h5.color-green {
+        margin-bottom: 16px;
+        font-family: Rajdhani, sans-serif;
+        color: #00d8be;
+        font-size: 18px;
+        line-height: 1.5;
+        font-weight: 500;
+        text-align: left;
+        letter-spacing: 1.5px;
+        text-transform: uppercase; }
+      #feature-section .future-item-container .future-item-left h5.color-orange {
+        margin-bottom: 16px;
+        font-family: Rajdhani, sans-serif;
+        color: #f18c33;
+        font-size: 18px;
+        line-height: 1.5;
+        font-weight: 500;
+        text-align: left;
+        letter-spacing: 1.5px;
+        text-transform: uppercase; }
+      #feature-section .future-item-container .future-item-left h5.color-blue {
+        margin-bottom: 16px;
+        font-family: Rajdhani, sans-serif;
+        color: #33abd1;
+        font-size: 18px;
+        line-height: 1.5;
+        font-weight: 500;
+        text-align: left;
+        letter-spacing: 1.5px;
+        text-transform: uppercase; }
+      #feature-section .future-item-container .future-item-left h3 {
+        font-size: 33px;
+        line-height: 140%;
+        font-weight: 600;
+        color: #fff;
+        margin-bottom: 24px; }
+      #feature-section .future-item-container .future-item-left p {
+        color: #adaabf;
+        margin-bottom: 32px;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 150%; }
+    #feature-section .future-item-container .future-item-right .image {
+      width: 100%; }
+      #feature-section .future-item-container .future-item-right .image img {
+        width: 100%;
+        border-radius: 10px; }
 
 .custom-padding {
   padding: 1rem 1.5rem;

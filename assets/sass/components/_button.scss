@@ -35,3 +35,17 @@
     background-color: $color-secondary;
   }
 }
+
+.button-explore {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  border: 1px solid $color-grey;
+  width: max-content;
+
+  &:hover {
+    border-color: $color-white;
+    background-color: hsla(30, 0%, 100%, 0.04);
+    color: $color-white;
+  }
+}

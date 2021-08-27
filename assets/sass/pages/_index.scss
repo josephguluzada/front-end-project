@@ -1,5 +1,6 @@
 body {
   background-color: $color-primary;
+  font-family: Inter, sans-serif;
   header {
     position: sticky;
     top: 0;
@@ -109,6 +110,92 @@ body {
       width: 95%;
       img {
         width: 100%;
+      }
+    }
+  }
+}
+
+//FEATURE SECTION
+
+#feature-section {
+  background-color: $color-primary;
+  padding: 140px 80px;
+
+  .future-item-container {
+    padding: 120px 48px 120px 80px;
+    background-color: $color-secondary;
+    border-radius: 1rem;
+    margin-bottom: 120px;
+
+    .future-item-left {
+      padding-right: 80px;
+      h5.color-orange-pink {
+        margin-bottom: 16px;
+        font-family: Rajdhani, sans-serif;
+        color: #ff9a83;
+        font-size: 18px;
+        line-height: 1.5;
+        font-weight: 500;
+        text-align: left;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+      }
+      h5.color-green {
+        margin-bottom: 16px;
+        font-family: Rajdhani, sans-serif;
+        color: #00d8be;
+        font-size: 18px;
+        line-height: 1.5;
+        font-weight: 500;
+        text-align: left;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+      }
+      h5.color-orange {
+        margin-bottom: 16px;
+        font-family: Rajdhani, sans-serif;
+        color: #f18c33;
+        font-size: 18px;
+        line-height: 1.5;
+        font-weight: 500;
+        text-align: left;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+      }
+      h5.color-blue {
+        margin-bottom: 16px;
+        font-family: Rajdhani, sans-serif;
+        color: #33abd1;
+        font-size: 18px;
+        line-height: 1.5;
+        font-weight: 500;
+        text-align: left;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+      }
+      h3 {
+        font-size: 33px;
+        line-height: 140%;
+        font-weight: 600;
+        color: $color-white;
+        margin-bottom: 24px;
+      }
+      p {
+        color: $color-grey;
+        margin-bottom: 32px;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 150%;
+      }
+    }
+
+    .future-item-right {
+      .image {
+        width: 100%;
+        img {
+          width: 100%;
+          border-radius: 10px;
+        }
       }
     }
   }
