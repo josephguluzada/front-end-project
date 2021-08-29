@@ -6855,6 +6855,8 @@ body {
         width: 100%; }
 
 #feature-section {
+  max-width: 1470px;
+  margin: 0 auto;
   background-color: #0f0d1e;
   padding: 140px 80px; }
   #feature-section .future-item-container {
@@ -6921,6 +6923,42 @@ body {
       #feature-section .future-item-container .future-item-right .image img {
         width: 100%;
         border-radius: 10px; }
+
+#global-section {
+  background-color: #18142e;
+  padding: 140px 80px; }
+  #global-section .container {
+    max-width: 1470px;
+    margin: 0 auto; }
+    #global-section .container .global-section-items .global-header h2 {
+      max-width: 540px;
+      margin-bottom: 24px;
+      color: #fff;
+      font-size: 48px;
+      line-height: 120%;
+      font-weight: 600;
+      text-align: center; }
+    #global-section .container .global-section-items .global-section-text {
+      margin-top: 56px;
+      margin-bottom: 56px; }
+      #global-section .container .global-section-items .global-section-text .global-section-text-item {
+        padding-right: 64px; }
+        #global-section .container .global-section-items .global-section-text .global-section-text-item h2 {
+          margin-top: 24px;
+          margin-bottom: 0;
+          font-family: Inter, sans-serif;
+          color: #fff;
+          font-size: 20px;
+          line-height: 150%;
+          font-weight: 500; }
+        #global-section .container .global-section-items .global-section-text .global-section-text-item p {
+          max-width: 80%;
+          min-height: auto;
+          min-width: auto;
+          margin-top: 10px;
+          color: #adaabf;
+          font-size: 20px;
+          line-height: 150%; }
 
 .custom-padding {
   padding: 1rem 1.5rem;
