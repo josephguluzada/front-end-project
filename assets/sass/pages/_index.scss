@@ -6,6 +6,7 @@ body {
     top: 0;
     z-index: 100000000000000000000000000;
     background-color: $color-primary;
+    font-weight: 300;
   }
 
   // HERO SECTION
@@ -203,6 +204,8 @@ body {
   }
 }
 
+// GLOBAL SECTION
+
 #global-section {
   background-color: $color-secondary;
   padding: 140px 80px;
@@ -250,6 +253,117 @@ body {
           }
         }
       }
+    }
+  }
+}
+
+// TESTIMONIALS SECTION
+
+#testimonials-section {
+  background-color: $color-tertiary;
+  padding: 140px 80px;
+
+  .container {
+    max-width: 1470px;
+    margin: 0 auto;
+
+    .testimonials-items {
+      .header h2 {
+        position: static;
+        max-width: 540px;
+        min-height: auto;
+        min-width: auto;
+        margin-top: 0;
+        margin-bottom: 24px;
+        font-family: Inter, sans-serif;
+        color: $color-white;
+        font-size: 35px;
+        line-height: 120%;
+        font-weight: 600;
+        text-align: left;
+      }
+
+      .testimonials-pictures {
+        margin-top: 48px;
+        .picture {
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          padding: 24px 32px;
+
+          img {
+            height: 60px;
+          }
+
+          .text {
+            padding: 9px 20px;
+            h2 {
+              color: $color-white;
+              font-size: 18px;
+              font-weight: 500;
+            }
+            p {
+              color: $color-white;
+              font-weight: 300;
+            }
+          }
+        }
+      }
+
+      .testimonials-text-sec {
+        background-color: $color-white;
+        padding: 80px 120px 80px 120px;
+        border-radius: 1rem;
+
+        .testimonials-text {
+          max-width: 720px;
+          text-align: center;
+          h3 {
+            color: $color-black;
+            margin-bottom: 16px;
+            font-size: 24px;
+            line-height: 170%;
+            font-weight: 300;
+            text-align: center;
+          }
+
+          p {
+            color: $color-tertiary;
+            margin-right: auto;
+            margin-left: auto;
+            font-size: 18px;
+            text-align: center;
+            font-weight: 300;
+            line-height: 150%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// CALL TO ACTION SECTION
+
+.call-to-action-section {
+  padding: 160px 0;
+  background-color: $color-primary;
+  text-align: center;
+
+  .cta-section-items {
+    h2 {
+      max-width: 890px;
+      min-height: auto;
+      min-width: auto;
+      margin-top: 0;
+      margin-bottom: 24px;
+      font-family: Inter, sans-serif;
+      color: $color-white;
+      font-size: 35px;
+      line-height: 120%;
+      font-weight: 600;
+    }
+    .spacer {
+      height: 24px;
     }
   }
 }
