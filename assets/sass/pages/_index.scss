@@ -12,11 +12,66 @@ body {
       ul {
         li {
           .dropdown-container {
+            position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
             img {
               margin-left: 0.9rem;
+            }
+          }
+          .dropdown-content {
+            position: absolute;
+            top: 83%;
+            background-color: $color-white;
+            border-radius: 0.5rem;
+            display: none;
+            ul {
+              padding: 1rem 0;
+              li {
+                padding: 12px 20px;
+                a {
+                  color: $color-black;
+                  padding: 10px 20px;
+
+                  &:hover {
+                    color: $color-tertiary;
+                  }
+                }
+              }
+            }
+          }
+          .dropdown-content-2 {
+            position: absolute;
+            overflow: auto;
+            max-height: 85vh;
+            display: none;
+            top: 83%;
+            background-color: $color-white;
+            border-radius: 0.5rem;
+            padding: 0.5rem 0 2rem 0;
+            h3 {
+              color: $color-black;
+              padding: 1rem 0 0 1rem;
+            }
+            ul {
+              padding: 0 0 1rem 0;
+              li {
+                padding: 12px 20px;
+                a {
+                  color: $color-black;
+                  padding: 10px 20px;
+
+                  &:hover {
+                    color: $color-tertiary;
+                  }
+                }
+              }
+            }
+            .bold-link {
+              font-weight: bold;
+              font-size: 1.17rem;
+              margin-left: -18px;
             }
           }
         }
