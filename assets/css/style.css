@@ -7039,6 +7039,108 @@ body {
   .call-to-action-section .cta-section-items .spacer {
     height: 24px; }
 
+#blog-section {
+  background-color: #18142e;
+  padding: 140px 80px; }
+  #blog-section .container {
+    max-width: 1470px;
+    margin: 0 auto; }
+    #blog-section .container .blog-section-items {
+      text-align: center; }
+      #blog-section .container .blog-section-items h2.header {
+        text-align: center;
+        margin-bottom: 70px;
+        font-family: Inter, sans-serif;
+        color: #fff;
+        font-size: 35px;
+        line-height: 120%;
+        font-weight: 600; }
+      #blog-section .container .blog-section-items .blog-items {
+        margin-top: 48px;
+        margin-bottom: 60px; }
+        #blog-section .container .blog-section-items .blog-items .blog-item {
+          transition: transform 0.2s;
+          cursor: pointer; }
+          #blog-section .container .blog-section-items .blog-items .blog-item .blog-item-top {
+            position: relative;
+            max-width: 476px;
+            height: 240px; }
+            #blog-section .container .blog-section-items .blog-items .blog-item .blog-item-top .image {
+              background: url("../images/blog-item-1.png");
+              border-top-left-radius: 1rem;
+              border-top-right-radius: 1rem;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+              overflow: hidden;
+              width: 100%;
+              height: 240px; }
+            #blog-section .container .blog-section-items .blog-items .blog-item .blog-item-top .image-2 {
+              background: url("../images/blog-item-2.png");
+              border-top-left-radius: 1rem;
+              border-top-right-radius: 1rem;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+              overflow: hidden;
+              width: 100%;
+              height: 240px; }
+            #blog-section .container .blog-section-items .blog-items .blog-item .blog-item-top .image-3 {
+              background: url("../images/blog-item-3.png");
+              border-top-left-radius: 1rem;
+              border-top-right-radius: 1rem;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+              overflow: hidden;
+              width: 100%;
+              height: 240px; }
+            #blog-section .container .blog-section-items .blog-items .blog-item .blog-item-top .remote-work {
+              position: absolute;
+              top: 76%;
+              left: 9%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+              font-weight: 300;
+              background-color: #5b35d5;
+              height: 30px;
+              border-radius: 5px;
+              padding: 0.5rem; }
+          #blog-section .container .blog-section-items .blog-items .blog-item .blog-item-bottom {
+            background-color: #0f0d1e;
+            padding-top: 0.5rem;
+            padding-bottom: 1rem;
+            height: 350px;
+            text-align: left;
+            border-bottom-left-radius: 1rem;
+            border-bottom-right-radius: 1rem; }
+            #blog-section .container .blog-section-items .blog-items .blog-item .blog-item-bottom h2 {
+              margin-top: 32px;
+              margin-bottom: 22px;
+              padding-right: 32px;
+              padding-left: 32px;
+              font-size: 20px;
+              line-height: 150%; }
+            #blog-section .container .blog-section-items .blog-items .blog-item .blog-item-bottom > p {
+              padding-right: 32px;
+              padding-left: 32px;
+              font-size: 17px;
+              font-weight: 300;
+              color: #adaabf;
+              line-height: 150%;
+              margin-bottom: 24px; }
+            #blog-section .container .blog-section-items .blog-items .blog-item .blog-item-bottom .calendar {
+              display: flex;
+              align-items: center;
+              padding-left: 2rem; }
+              #blog-section .container .blog-section-items .blog-items .blog-item .blog-item-bottom .calendar p.calendar-text {
+                font-size: 16px;
+                color: #adaabf; }
+          #blog-section .container .blog-section-items .blog-items .blog-item:hover {
+            transform: translateY(-5px); }
+
 .custom-padding {
   padding: 1rem 1.5rem;
   cursor: pointer;
