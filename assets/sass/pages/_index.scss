@@ -19,6 +19,29 @@ body {
             img {
               margin-left: 0.9rem;
             }
+
+            .dropdown-arrow {
+              transition: all 0.4s;
+            }
+            .dropdown-arrow.active {
+              transform: rotate(180deg);
+            }
+          }
+          .dropdown-container-2 {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+              margin-left: 0.9rem;
+            }
+
+            .dropdown-arrow-2 {
+              transition: all 0.4s;
+            }
+            .dropdown-arrow-2.active {
+              transform: rotate(180deg);
+            }
           }
           .dropdown-content {
             position: absolute;
@@ -40,6 +63,9 @@ body {
                 }
               }
             }
+          }
+          .dropdown-content.active {
+            display: block;
           }
           .dropdown-content-2 {
             position: absolute;
@@ -73,6 +99,9 @@ body {
               font-size: 1.17rem;
               margin-left: -18px;
             }
+          }
+          .dropdown-content-2.active {
+            display: block;
           }
         }
       }
