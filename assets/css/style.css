@@ -6797,22 +6797,12 @@ body {
         transition: all 0.4s; }
       body header nav ul li .dropdown-container .dropdown-arrow.active {
         transform: rotate(180deg); }
-    body header nav ul li .dropdown-container-2 {
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      body header nav ul li .dropdown-container-2 img {
-        margin-left: 0.9rem; }
-      body header nav ul li .dropdown-container-2 .dropdown-arrow-2 {
-        transition: all 0.4s; }
-      body header nav ul li .dropdown-container-2 .dropdown-arrow-2.active {
-        transform: rotate(180deg); }
     body header nav ul li .dropdown-content {
       position: absolute;
       top: 83%;
       background-color: #fff;
       border-radius: 0.5rem;
+      transition: all 1s ease;
       display: none; }
       body header nav ul li .dropdown-content ul {
         padding: 1rem 0; }
