@@ -7038,7 +7038,9 @@ body {
           cursor: pointer;
           display: flex;
           align-items: center;
-          padding: 24px 32px; }
+          padding: 24px 32px;
+          opacity: 0.3;
+          border-bottom: 2px solid #ff9a83; }
           body #testimonials-section .container .testimonials-items .testimonials-pictures .picture img {
             height: 60px; }
           body #testimonials-section .container .testimonials-items .testimonials-pictures .picture .text {
@@ -7050,13 +7052,17 @@ body {
             body #testimonials-section .container .testimonials-items .testimonials-pictures .picture .text p {
               color: #fff;
               font-weight: 300; }
+        body #testimonials-section .container .testimonials-items .testimonials-pictures .picture.active {
+          opacity: 1; }
       body #testimonials-section .container .testimonials-items .testimonials-text-sec {
         background-color: #fff;
         padding: 80px 120px 80px 120px;
         border-radius: 1rem; }
         body #testimonials-section .container .testimonials-items .testimonials-text-sec .testimonials-text {
+          position: relative;
           max-width: 720px;
-          text-align: center; }
+          text-align: center;
+          display: none; }
           body #testimonials-section .container .testimonials-items .testimonials-text-sec .testimonials-text h3 {
             color: #000;
             margin-bottom: 16px;
@@ -7072,6 +7078,8 @@ body {
             text-align: center;
             font-weight: 300;
             line-height: 150%; }
+        body #testimonials-section .container .testimonials-items .testimonials-text-sec .testimonials-text.active {
+          display: block; }
   body .call-to-action-section {
     padding: 160px 0;
     background-color: #0f0d1e;

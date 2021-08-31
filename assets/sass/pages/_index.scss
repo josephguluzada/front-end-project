@@ -27,22 +27,7 @@ body {
               transform: rotate(180deg);
             }
           }
-          // .dropdown-container-2 {
-          //   position: relative;
-          //   display: flex;
-          //   justify-content: center;
-          //   align-items: center;
-          //   img {
-          //     margin-left: 0.9rem;
-          //   }
 
-          //   .dropdown-arrow-2 {
-          //     transition: all 0.4s;
-          //   }
-          //   .dropdown-arrow-2.active {
-          //     transform: rotate(180deg);
-          //   }
-          // }
           .dropdown-content {
             position: absolute;
             top: 83%;
@@ -50,6 +35,8 @@ body {
             border-radius: 0.5rem;
             transition: all 1s ease; //Don't working
             display: none;
+            // height: 0;  //for scroll height
+            // overflow: hidden;
             ul {
               padding: 1rem 0;
               li {
@@ -67,6 +54,7 @@ body {
           }
           .dropdown-content.active {
             display: block;
+            // height: max-content; //scroll heigt
           }
           .dropdown-content-2 {
             position: absolute;
@@ -389,6 +377,8 @@ body {
             display: flex;
             align-items: center;
             padding: 24px 32px;
+            opacity: 0.3;
+            border-bottom: 2px solid #ff9a83;
 
             img {
               height: 60px;
@@ -407,6 +397,9 @@ body {
               }
             }
           }
+          .picture.active {
+            opacity: 1;
+          }
         }
 
         .testimonials-text-sec {
@@ -415,8 +408,10 @@ body {
           border-radius: 1rem;
 
           .testimonials-text {
+            position: relative;
             max-width: 720px;
             text-align: center;
+            display: none;
             h3 {
               color: $color-black;
               margin-bottom: 16px;
@@ -435,6 +430,9 @@ body {
               font-weight: 300;
               line-height: 150%;
             }
+          }
+          .testimonials-text.active {
+            display: block;
           }
         }
       }
