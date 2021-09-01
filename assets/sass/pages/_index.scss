@@ -1,15 +1,24 @@
 body {
   background-color: $color-primary;
   font-family: Inter, sans-serif;
+
+  // HEADER SECTION
   header {
     position: sticky;
     top: 0;
     z-index: 100000000000000000000000000;
     background-color: $color-primary;
     font-weight: 300;
-
+    .nav-logo {
+      a {
+        img {
+          width: 100%;
+        }
+      }
+    }
     nav {
       ul {
+        width: max-content;
         li {
           .dropdown-container {
             position: relative;
@@ -92,6 +101,51 @@ body {
           .dropdown-content-2.active {
             display: block;
           }
+        }
+      }
+    }
+    .hamburger-icon {
+      display: none;
+      svg {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    //RESPONSIVE DESIGN FOR HEADER
+    @media screen and (min-width: 991) {
+      .container {
+        max-width: 95%;
+      }
+    }
+    @media screen and (max-width: 991px) {
+      .container {
+        max-width: 95%;
+      }
+      .navbar {
+        display: none;
+      }
+      .hamburger-icon {
+        display: block;
+        margin-left: auto;
+        text-align: right;
+      }
+      .nav-logo {
+        width: 25%;
+      }
+    }
+
+    @media screen and (max-width: 1200px) {
+      .custom-padding {
+        padding: 1rem 0.5rem;
+        cursor: pointer;
+      }
+    }
+    @media screen and (min-width: 1400px) {
+      .nav-logo {
+        width: 15%;
+        img {
+          width: 100%;
         }
       }
     }
@@ -709,7 +763,6 @@ body {
   .custom-padding {
     padding: 1rem 1.5rem;
     cursor: pointer;
-    white-space: nowrap;
   }
 
   .hover-color:hover {
