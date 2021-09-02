@@ -120,12 +120,16 @@ body {
     }
     @media screen and (max-width: 991px) {
       .container {
+        position: relative;
         max-width: 95%;
       }
       .navbar {
         display: none;
       }
       .hamburger-icon {
+        position: absolute;
+        top: 21%;
+        left: 34%;
         display: block;
         margin-left: auto;
         text-align: right;
@@ -200,6 +204,44 @@ body {
         }
       }
     }
+    // @media screen and (max-width: 991px) {
+    //   .hero-section-texts {
+    //     width: 100%;
+    //     text-align: left;
+    //     .hero-text-container {
+    //       width: 100%;
+    //       margin-left: -13%;
+    //       .hero-text-top {
+    //         h1 {
+    //           position: static;
+    //           max-width: 720px;
+    //           min-height: auto;
+    //           min-width: auto;
+    //           margin-top: 0;
+    //           font-family: Inter, sans-serif;
+    //           color: $color-white;
+    //           font-size: 40px;
+    //           line-height: 140%;
+    //           font-weight: 600;
+    //         }
+    //         p {
+    //           max-width: 720px;
+    //           min-height: auto;
+    //           min-width: auto;
+    //           color: #adaabf;
+    //         }
+    //       }
+    //       .hero-text-bottom {
+    //         .images {
+    //           flex-wrap: nowrap;
+    //         }
+    //       }
+    //     }
+    //   }
+    //   .hero-section-img {
+    //     width: 100%;
+    //   }
+    // }
   }
 
   //EMPLOYING SECTION
