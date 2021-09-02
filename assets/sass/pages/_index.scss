@@ -644,7 +644,6 @@ body {
               background-color: $color-primary;
               padding-top: 0.5rem;
               padding-bottom: 1rem;
-              height: 350px;
               text-align: left;
               border-bottom-left-radius: 1rem;
               border-bottom-right-radius: 1rem;
@@ -693,7 +692,16 @@ body {
     background-color: $color-primary;
 
     .footer-items {
+      .footer-item-container {
+        display: flex;
+        justify-content: space-between;
+        .col-11 {
+          width: 540px !important;
+        }
+      }
+
       .logo-footer {
+        margin-right: 5rem;
         img {
           width: 60px;
           height: 60px;
@@ -800,17 +808,167 @@ body {
         }
       }
     }
-  }
 
-  .custom-padding {
-    padding: 1rem 1.5rem;
-    cursor: pointer;
-  }
+    @media screen and (max-width: 1200px) {
+      padding: 80px 20px;
+      .container {
+        max-width: 1100px;
+        .footer-items {
+          .row {
+            .col-7 {
+              padding-left: 0 !important;
 
-  .hover-color:hover {
-    background-color: $color-secondary;
+              .col-footer-1 {
+                width: 25%;
+              }
+              .col-footer-2 {
+                width: 33%;
+                margin-right: 2rem;
+                h3 {
+                  white-space: nowrap;
+                }
+              }
+              .col-footer-3 {
+                padding-left: 2rem;
+              }
+            }
+          }
+          .form-container {
+            padding: 0 !important;
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 1400px) {
+      .container {
+        max-width: 100%;
+      }
+    }
+    @media screen and (max-width: 1262px) {
+      .container {
+        .footer-items {
+          .footer-item-container {
+            .row {
+              width: 61%;
+              .col-11 {
+                width: 500px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 1094px) {
+      .container {
+        .footer-items {
+          .logo-footer {
+            margin-right: 2rem !important;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 991px) {
+      padding-left: 48px;
+      padding-right: 48px;
+      .container {
+        .footer-items {
+          .footer-item-container {
+            .logo-footer {
+              margin-bottom: 2rem;
+            }
+            .row {
+              flex-direction: column;
+              .col-footer-1 {
+                margin-bottom: 24px;
+              }
+              .col-footer-2 {
+                margin-bottom: 24px;
+              }
+              .col-footer-3 {
+                padding-left: 12px;
+              }
+            }
+            .form-container {
+              width: 50%;
+            }
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      .container {
+        .footer-items {
+          .footer-item-container {
+            flex-direction: column;
+            .row {
+              .col-11 {
+                flex-direction: row;
+                flex-wrap: wrap;
+
+                .col-footer-1 {
+                  margin-right: 32px;
+                  margin-bottom: 32px;
+                  margin-left: 0;
+                }
+                .col-footer-2 {
+                  margin-right: 0;
+                  margin-bottom: 40px;
+                }
+              }
+            }
+            .form-container {
+              width: 110%;
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 376px) {
+      padding-left: 10px;
+      padding-right: 10px;
+      .container {
+        .footer-items {
+          .footer-item-container {
+            flex-direction: column;
+            margin-bottom: 48px;
+            .row {
+              .col-11 {
+                flex-direction: column;
+
+                .col-footer-3 {
+                  margin-bottom: 34px;
+                }
+              }
+            }
+            .form-container {
+              width: 110%;
+              margin: 0 auto;
+              p {
+                font-size: 14px;
+              }
+              .form-footer {
+                .button-primary-bigger {
+                  width: 90%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
-// body.active{
 
-// }
+.custom-padding {
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+}
+
+.hover-color:hover {
+  background-color: $color-secondary;
+}
