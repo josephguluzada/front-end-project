@@ -61,7 +61,7 @@
         }
       }
       @media screen and (max-width: 376px) {
-        padding: 60px 10px;
+        padding: 60px 24px;
         max-width: 880px;
         h1 {
           font-size: 32px;
@@ -73,6 +73,7 @@
         }
       }
     }
+
     @media screen and (max-width: 991px) {
       padding: 0;
     }
@@ -166,6 +167,13 @@
           text-align: left;
         }
       }
+    }
+    @media screen and (max-width: 376px) {
+      padding: 60px 24px;
+    }
+
+    @media screen and (max-width: 769px) {
+      padding: 80px 48px;
     }
   }
 }
