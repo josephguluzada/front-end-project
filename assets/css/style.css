@@ -7870,3 +7870,138 @@ body {
             padding-right: 0;
             padding-bottom: 0;
             padding-left: 0; } }
+
+.login {
+  background-color: #fff;
+  overflow-x: hidden;
+  min-height: 100vh; }
+  .login .login-container {
+    height: 100vh; }
+    .login .login-container .left-side {
+      height: auto; }
+      .login .login-container .left-side .aside {
+        --tw-bg-opacity: 1;
+        background-color: rgba(248, 248, 252, var(--tw-bg-opacity));
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        align-items: center; }
+        .login .login-container .left-side .aside .logo {
+          display: flex;
+          -webkit-box-align: center;
+          align-items: center;
+          padding-left: 1.5rem;
+          padding-top: 1.5rem;
+          padding-bottom: 1.5rem;
+          cursor: pointer; }
+          .login .login-container .left-side .aside .logo .logo-left {
+            color: #fff;
+            fill: white;
+            stroke: currentcolor;
+            background-color: rgba(91, 53, 213, var(--tw-bg-opacity));
+            padding: 0.5rem;
+            margin-right: 0.75rem;
+            border-radius: 4px; }
+        .login .login-container .left-side .aside .aside-bottom {
+          width: 316px;
+          margin-bottom: 40px; }
+          .login .login-container .left-side .aside .aside-bottom .aside-paragh {
+            --tw-text-opacity: 1;
+            font-family: Inter, sans-serif;
+            font-size: 24px;
+            line-height: 140%;
+            font-weight: 600;
+            color: #5b557f;
+            text-align: center; }
+          .login .login-container .left-side .aside .aside-bottom .trusted-by {
+            --tw-text-opacity: 1;
+            font-family: Inter, sans-serif;
+            font-size: 16px;
+            line-height: 150%;
+            font-weight: 600;
+            color: #84809f;
+            text-align: center; }
+    .login .login-container .right-side a {
+      color: #5b35d5; }
+    .login .login-container .right-side .login-form-sec {
+      padding-top: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; }
+      .login .login-container .right-side .login-form-sec .login-header {
+        font-size: 32px;
+        line-height: 140%;
+        font-family: Inter, sans-serif;
+        font-weight: 600;
+        --tw-text-opacity: 1;
+        color: rgba(15, 13, 30, var(--tw-text-opacity)); }
+      .login .login-container .right-side .login-form-sec .login-paragh {
+        margin-top: 32px;
+        --tw-text-opacity: 1;
+        color: rgba(15, 13, 30, var(--tw-text-opacity));
+        font-family: Inter, sans-serif;
+        font-size: 16px;
+        line-height: 150%;
+        font-weight: 400; }
+      .login .login-container .right-side .login-form-sec form {
+        display: flex;
+        flex-direction: column;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        border-bottom-width: 1px;
+        --tw-border-opacity: 1;
+        border-color: rgba(235, 234, 245, var(--tw-border-opacity));
+        margin-top: 40px;
+        padding-bottom: 40px;
+        width: 35%; }
+        .login .login-container .right-side .login-form-sec form label {
+          color: #000; }
+        .login .login-container .right-side .login-form-sec form input {
+          margin-top: 5px;
+          margin-bottom: 20px;
+          height: 40px;
+          padding: 0.7rem;
+          outline: none; }
+        .login .login-container .right-side .login-form-sec form .button-primary-bigger {
+          text-align: center;
+          color: #fff;
+          margin-top: 20px;
+          margin-bottom: 20px; }
+        .login .login-container .right-side .login-form-sec form .forget-p {
+          --tw-text-opacity: 1;
+          color: rgba(15, 13, 30, var(--tw-text-opacity));
+          font-family: Inter, sans-serif;
+          font-size: 14px;
+          line-height: 150%;
+          font-weight: 400; }
+          .login .login-container .right-side .login-form-sec form .forget-p .forgot {
+            --tw-text-opacity: 1;
+            color: rgba(91, 53, 213, var(--tw-text-opacity));
+            text-decoration: underline;
+            transition-property: background-color, border-color, color, fill, stroke;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 100ms;
+            font-family: Inter, sans-serif;
+            text-underline-position: under; }
+      .login .login-container .right-side .login-form-sec .dont-have {
+        margin-top: 32px;
+        --tw-text-opacity: 1;
+        color: rgba(15, 13, 30, var(--tw-text-opacity));
+        font-family: Inter, sans-serif;
+        font-size: 14px;
+        line-height: 150%;
+        font-weight: 400;
+        text-align: left; }
+        .login .login-container .right-side .login-form-sec .dont-have .dont-have-a {
+          --tw-text-opacity: 1;
+          color: rgba(91, 53, 213, var(--tw-text-opacity));
+          text-decoration: underline;
+          transition-property: background-color, border-color, color, fill, stroke;
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-duration: 100ms;
+          font-family: Inter, sans-serif;
+          text-underline-position: under; }
