@@ -7771,3 +7771,97 @@ body {
                   justify-content: center; }
                   .blog-section .container-blog-section .blog-section-contents .wrapper-blog .all-blog-content .blog-items-container .pagenation .page-button .button-primary-bigger span {
                     width: 2px; }
+  @media screen and (max-width: 991px) {
+    .blog-section {
+      padding: 140px 48px; }
+      .blog-section .container-blog-section .blog-section-contents .header-blog {
+        padding-right: 0;
+        padding-left: 0;
+        font-size: 48px;
+        text-align: center; }
+      .blog-section .container-blog-section .blog-section-contents .wrapper-blog .all-blog-content .blog-items-container .blog-items .blog-item-container .blog-item {
+        flex-direction: row;
+        padding: 32px; }
+        .blog-section .container-blog-section .blog-section-contents .wrapper-blog .all-blog-content .blog-items-container .blog-items .blog-item-container .blog-item .blog-item-img {
+          width: 45%; }
+          .blog-section .container-blog-section .blog-section-contents .wrapper-blog .all-blog-content .blog-items-container .blog-items .blog-item-container .blog-item .blog-item-img img {
+            width: 100%; }
+          .blog-section .container-blog-section .blog-section-contents .wrapper-blog .all-blog-content .blog-items-container .blog-items .blog-item-container .blog-item .blog-item-img .custom-img {
+            width: 100%;
+            height: auto; }
+          .blog-section .container-blog-section .blog-section-contents .wrapper-blog .all-blog-content .blog-items-container .blog-items .blog-item-container .blog-item .blog-item-img .custom-img-last {
+            width: 100%;
+            height: auto; }
+        .blog-section .container-blog-section .blog-section-contents .wrapper-blog .all-blog-content .blog-items-container .blog-items .blog-item-container .blog-item .blog-item-link {
+          width: 55%; }
+          .blog-section .container-blog-section .blog-section-contents .wrapper-blog .all-blog-content .blog-items-container .blog-items .blog-item-container .blog-item .blog-item-link .blog-title {
+            margin-top: 0;
+            padding-right: 0;
+            padding-left: 32px;
+            font-size: 20px; }
+          .blog-section .container-blog-section .blog-section-contents .wrapper-blog .all-blog-content .blog-items-container .blog-items .blog-item-container .blog-item .blog-item-link .blog-paraghraph {
+            padding-right: 0;
+            padding-left: 32px; }
+          .blog-section .container-blog-section .blog-section-contents .wrapper-blog .all-blog-content .blog-items-container .blog-items .blog-item-container .blog-item .blog-item-link .blog-date-sec {
+            width: 100%;
+            padding-right: 0;
+            padding-bottom: 0;
+            padding-left: 32px; } }
+  @media screen and (max-width: 769px) {
+    .blog-section .container-blog-section .blog-section-contents .header-blog {
+      padding-right: 0;
+      padding-left: 0;
+      font-size: 48px;
+      text-align: center; }
+    .blog-section .container-blog-section .blog-section-contents .wrapper-blog .all-blog-content .blog-items-container .blog-items .blog-item-container .blog-item {
+      flex-direction: row;
+      padding: 32px; }
+      .blog-section .container-blog-section .blog-section-contents .wrapper-blog .all-blog-content .blog-items-container .blog-items .blog-item-container .blog-item .blog-item-img {
+        width: 45%; }
+        .blog-section .container-blog-section .blog-section-contents .wrapper-blog .all-blog-content .blog-items-container .blog-items .blog-item-container .blog-item .blog-item-img img {
+          width: 100%; }
+      .blog-section .container-blog-section .blog-section-contents .wrapper-blog .all-blog-content .blog-items-container .blog-items .blog-item-container .blog-item .blog-item-link {
+        width: 55%; }
+        .blog-section .container-blog-section .blog-section-contents .wrapper-blog .all-blog-content .blog-items-container .blog-items .blog-item-container .blog-item .blog-item-link .blog-title {
+          margin-top: 0;
+          padding-right: 0;
+          padding-left: 32px;
+          font-size: 20px; }
+        .blog-section .container-blog-section .blog-section-contents .wrapper-blog .all-blog-content .blog-items-container .blog-items .blog-item-container .blog-item .blog-item-link .blog-paraghraph {
+          padding-right: 0;
+          padding-left: 32px; }
+        .blog-section .container-blog-section .blog-section-contents .wrapper-blog .all-blog-content .blog-items-container .blog-items .blog-item-container .blog-item .blog-item-link .blog-date-sec {
+          width: 100%;
+          padding-right: 0;
+          padding-bottom: 0;
+          padding-left: 32px; } }
+  @media screen and (max-width: 376px) {
+    .blog-section {
+      padding: 60px 24px; }
+      .blog-section .container-blog-section .blog-section-contents .header-blog {
+        padding-right: 0;
+        padding-left: 0;
+        font-size: 32px;
+        text-align: center; }
+      .blog-section .container-blog-section .blog-section-contents .wrapper-blog .all-blog-content .blog-items-container .blog-items .blog-item-container .blog-item {
+        flex-direction: column;
+        padding: 16px; }
+        .blog-section .container-blog-section .blog-section-contents .wrapper-blog .all-blog-content .blog-items-container .blog-items .blog-item-container .blog-item .blog-item-img {
+          width: 100%; }
+          .blog-section .container-blog-section .blog-section-contents .wrapper-blog .all-blog-content .blog-items-container .blog-items .blog-item-container .blog-item .blog-item-img img {
+            width: 100%; }
+        .blog-section .container-blog-section .blog-section-contents .wrapper-blog .all-blog-content .blog-items-container .blog-items .blog-item-container .blog-item .blog-item-link {
+          width: 100%; }
+          .blog-section .container-blog-section .blog-section-contents .wrapper-blog .all-blog-content .blog-items-container .blog-items .blog-item-container .blog-item .blog-item-link .blog-title {
+            margin-top: 32px;
+            padding-right: 0;
+            padding-left: 0;
+            font-size: 20px; }
+          .blog-section .container-blog-section .blog-section-contents .wrapper-blog .all-blog-content .blog-items-container .blog-items .blog-item-container .blog-item .blog-item-link .blog-paraghraph {
+            padding-right: 0;
+            padding-left: 0; }
+          .blog-section .container-blog-section .blog-section-contents .wrapper-blog .all-blog-content .blog-items-container .blog-items .blog-item-container .blog-item .blog-item-link .blog-date-sec {
+            width: 100%;
+            padding-right: 0;
+            padding-bottom: 0;
+            padding-left: 0; } }

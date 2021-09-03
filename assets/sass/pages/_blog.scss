@@ -261,4 +261,170 @@
       }
     }
   }
+
+  @media screen and (max-width: 991px) {
+    padding: 140px 48px;
+    .container-blog-section {
+      .blog-section-contents {
+        .header-blog {
+          padding-right: 0;
+          padding-left: 0;
+          font-size: 48px;
+          text-align: center;
+        }
+        .wrapper-blog {
+          .all-blog-content {
+            .blog-items-container {
+              .blog-items {
+                .blog-item-container {
+                  .blog-item {
+                    flex-direction: row;
+                    padding: 32px;
+                    .blog-item-img {
+                      width: 45%;
+                      img {
+                        width: 100%;
+                      }
+                      .custom-img {
+                        width: 100%;
+                        height: auto;
+                      }
+                      .custom-img-last {
+                        width: 100%;
+                        height: auto;
+                      }
+                    }
+                    .blog-item-link {
+                      width: 55%;
+                      .blog-title {
+                        margin-top: 0;
+                        padding-right: 0;
+                        padding-left: 32px;
+                        font-size: 20px;
+                      }
+                      .blog-paraghraph {
+                        padding-right: 0;
+                        padding-left: 32px;
+                      }
+                      .blog-date-sec {
+                        width: 100%;
+                        padding-right: 0;
+                        padding-bottom: 0;
+                        padding-left: 32px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 769px) {
+    .container-blog-section {
+      .blog-section-contents {
+        .header-blog {
+          padding-right: 0;
+          padding-left: 0;
+          font-size: 48px;
+          text-align: center;
+        }
+        .wrapper-blog {
+          .all-blog-content {
+            .blog-items-container {
+              .blog-items {
+                .blog-item-container {
+                  .blog-item {
+                    flex-direction: row;
+                    padding: 32px;
+                    .blog-item-img {
+                      width: 45%;
+                      img {
+                        width: 100%;
+                      }
+                    }
+                    .blog-item-link {
+                      width: 55%;
+                      .blog-title {
+                        margin-top: 0;
+                        padding-right: 0;
+                        padding-left: 32px;
+                        font-size: 20px;
+                      }
+                      .blog-paraghraph {
+                        padding-right: 0;
+                        padding-left: 32px;
+                      }
+                      .blog-date-sec {
+                        width: 100%;
+                        padding-right: 0;
+                        padding-bottom: 0;
+                        padding-left: 32px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 376px) {
+    padding: 60px 24px;
+    .container-blog-section {
+      .blog-section-contents {
+        .header-blog {
+          padding-right: 0;
+          padding-left: 0;
+          font-size: 32px;
+          text-align: center;
+        }
+        .wrapper-blog {
+          .all-blog-content {
+            .blog-items-container {
+              .blog-items {
+                .blog-item-container {
+                  .blog-item {
+                    flex-direction: column;
+                    padding: 16px;
+                    .blog-item-img {
+                      width: 100%;
+                      img {
+                        width: 100%;
+                      }
+                    }
+                    .blog-item-link {
+                      width: 100%;
+                      .blog-title {
+                        margin-top: 32px;
+                        padding-right: 0;
+                        padding-left: 0;
+                        font-size: 20px;
+                      }
+                      .blog-paraghraph {
+                        padding-right: 0;
+                        padding-left: 0;
+                      }
+                      .blog-date-sec {
+                        width: 100%;
+                        padding-right: 0;
+                        padding-bottom: 0;
+                        padding-left: 0;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
