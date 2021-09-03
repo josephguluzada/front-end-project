@@ -93,6 +93,7 @@
               align-items: stretch;
 
               .blog-item-container {
+                display: none;
                 padding-right: 24px;
                 padding-bottom: 48px;
                 padding-left: 24px;
@@ -228,6 +229,9 @@
                   }
                 }
               }
+              .blog-item-container.active {
+                display: block;
+              }
             }
             .pagenation {
               display: flex;
@@ -256,6 +260,9 @@
                 }
               }
             }
+          }
+          .blog-item-container.active {
+            display: block;
           }
         }
       }
