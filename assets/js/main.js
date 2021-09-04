@@ -83,3 +83,27 @@ tabLinks.forEach(tabLink => {
         }
     })
 })
+
+
+
+
+const playButton = document.querySelector(".play-icon");
+const closeButton = document.querySelector("#close");
+const modal = document.querySelector(".modal");
+
+playButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    modal.classList.add("active")
+});
+
+closeButton.addEventListener("click", () => {
+    modal.classList.remove("active");
+    var iframes = modal.getElementsByClassName('.iframe-container img');
+    if (iframes != null) {
+        for (let i = 0; i < iframes.length; i++) {
+            const iframe = iframes[i];
+            iframe.src = iframe.src;
+
+        }
+    }
+})

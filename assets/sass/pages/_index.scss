@@ -387,6 +387,80 @@ body {
           }
         }
       }
+      .hero-section-img {
+        position: relative;
+        .main-right-icon {
+          .play-icon {
+            background-color: rgba(134, 125, 243, 0.88);
+            position: absolute;
+            left: 43%;
+            top: 27%;
+            width: 80px;
+            height: 80px;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 20px;
+            border-radius: 100px;
+            opacity: 1;
+            transition: 250ms ease-in-out;
+            &:hover {
+              background-color: $color-tertiary;
+            }
+          }
+        }
+        .modal {
+          position: fixed;
+          top: 18%;
+          left: 20%;
+          height: 50%;
+          width: 70%;
+          display: grid;
+          place-items: center;
+          opacity: 0;
+          pointer-events: none;
+          visibility: hidden;
+          transition: all 0.3s ease-out;
+
+          .modal-container {
+            width: 100%;
+            position: relative;
+            padding: 0 1rem;
+            max-width: 80rem;
+
+            #close {
+              font-size: 3rem;
+              float: right;
+              color: $color-white;
+              cursor: pointer;
+
+              img {
+                width: 35px;
+                height: 35px;
+                filter: invert(1);
+              }
+            }
+            .iframe-container {
+              position: relative;
+              overflow: hidden;
+              width: 100%;
+              padding-top: 56.25%;
+
+              iframe {
+                position: absolute;
+                top: -18%;
+                left: -7%;
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+        }
+        .modal.active {
+          visibility: visible;
+          pointer-events: all;
+          opacity: 1;
+        }
+      }
     }
     @media screen and (max-width: 991px) {
       max-width: none;
