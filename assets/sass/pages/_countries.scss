@@ -167,3 +167,356 @@
     padding: 60px 24px;
   }
 }
+
+// COUNTRY LIST SECTION
+
+.country-list-sec {
+  padding: 160px 0;
+  background-color: $color-secondary;
+
+  .country-container {
+    display: flex;
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+    padding-top: 0;
+    justify-content: center;
+    background-color: transparent;
+    text-align: left;
+
+    .columns {
+      .col-3 {
+        padding-right: 40px;
+        padding-left: 40px;
+
+        li {
+          margin-bottom: 6px;
+        }
+
+        .horizontal-divider {
+          position: static;
+          z-index: auto;
+          display: block;
+          overflow: visible;
+          width: 50%;
+          height: 1px;
+          min-height: 0;
+          min-width: 0;
+          margin-top: 16px;
+          margin-bottom: 16px;
+          padding-top: 0;
+          padding-right: 0;
+          padding-left: 0;
+          grid-auto-columns: 1fr;
+          grid-column-gap: 16px;
+          grid-row-gap: 16px;
+          -ms-grid-columns: 1fr 1fr;
+          grid-template-columns: 1fr 1fr;
+          -ms-grid-rows: auto auto;
+          grid-template-rows: auto auto;
+          background-color: #5b557f;
+          opacity: 1;
+          color: transparent;
+          text-align: left;
+          -o-object-fit: fill;
+          object-fit: fill;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    padding: 100px 48px;
+  }
+
+  @media screen and (max-width: 769px) {
+    .country-container {
+      .columns {
+        .col-3 {
+          text-align: center;
+          width: 50%;
+
+          .horizontal-divider {
+            margin-left: 2.3rem;
+            width: 147px;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 376px) {
+    .country-container {
+      .columns {
+        .col-3 {
+          text-align: center;
+          width: 100%;
+
+          .horizontal-divider {
+            margin-left: 2.3rem;
+            width: 147px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// CTA SECTION
+
+.cta {
+  padding: 160px 0;
+
+  .cta-container {
+    max-width: 90ch;
+    margin: 0 auto;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    text-align: center;
+
+    .heading {
+      position: static;
+      max-width: 540px;
+      min-height: auto;
+      min-width: auto;
+      margin-top: 0;
+      margin-bottom: 34px;
+      font-family: Inter, sans-serif;
+      color: #fff;
+      font-size: 35px;
+      line-height: 120%;
+      font-weight: 600;
+      text-align: left;
+    }
+
+    .heading.centered {
+      display: block;
+      max-width: none;
+      margin-right: auto;
+      margin-left: auto;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-align-self: auto;
+      -ms-flex-item-align: auto;
+      -ms-grid-row-align: auto;
+      align-self: auto;
+      font-family: Inter, sans-serif;
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 376px) {
+    padding: 80px 24px;
+
+    .cta-container {
+      .heading.centered {
+        font-size: 30px;
+        text-align: center;
+      }
+      .button-primary-bigger {
+        min-width: 100%;
+      }
+    }
+  }
+}
+
+// COUNTRIES GLOBAL SECTION
+
+.countries-global-section {
+  padding: 140px 80px;
+  background-color: $color-secondary;
+
+  .global-container {
+    .heading.small {
+      font-family: Inter, sans-serif;
+      font-size: 33px;
+      margin-bottom: 24px;
+      line-height: 140%;
+      font-weight: 600;
+      text-align: left;
+    }
+
+    .block-watch-video {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      max-width: 72%;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+      align-self: flex-start;
+
+      .text-watch {
+        margin-bottom: 0;
+        color: $color-white;
+        font-size: 18px;
+        font-weight: 300;
+      }
+      .button-video {
+        align-self: auto;
+
+        img {
+          vertical-align: middle;
+          display: inline-block;
+          max-width: 100%;
+          padding-top: 0;
+          padding-bottom: 0;
+          border: 1px transparent;
+          border-radius: 16px;
+        }
+        .icon-play {
+          margin-left: 16px;
+        }
+      }
+    }
+
+    .columns-module {
+      margin-top: 80px;
+      .column-module {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        height: auto;
+        padding-right: 16px;
+        padding-left: 16px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        -webkit-align-self: stretch;
+        -ms-flex-item-align: stretch;
+        align-self: stretch;
+        -webkit-box-ordinal-group: 1;
+        -webkit-order: 0;
+        -ms-flex-order: 0;
+        order: 0;
+
+        img {
+          vertical-align: middle;
+          display: inline-block;
+          max-width: 100%;
+          padding-top: 0;
+          padding-bottom: 0;
+          border: 1px transparent;
+          border-radius: 16px;
+        }
+        .icon-module {
+          width: 40px;
+          height: 40px;
+          max-width: none;
+          min-height: 40px;
+          min-width: 40px;
+          margin-top: 16px;
+          margin-right: 0;
+          border-radius: 4px;
+        }
+
+        .subheading-module {
+          margin-top: 24px;
+          margin-bottom: 8px;
+          font-family: Inter, sans-serif;
+          font-size: 20px;
+          font-weight: 500;
+        }
+
+        .paragraph-module {
+          display: block;
+          margin-top: auto;
+          margin-bottom: 8px;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -webkit-box-pack: start;
+          -webkit-justify-content: flex-start;
+          -ms-flex-pack: start;
+          justify-content: flex-start;
+          -webkit-box-align: stretch;
+          -webkit-align-items: stretch;
+          -ms-flex-align: stretch;
+          align-items: stretch;
+          color: #adaabf;
+        }
+
+        .link-module {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          margin-top: auto;
+          margin-bottom: 10px;
+          -webkit-box-align: end;
+          -webkit-align-items: flex-end;
+          -ms-flex-align: end;
+          align-items: flex-end;
+          text-decoration: none;
+        }
+
+        a {
+          background-color: transparent;
+          color: #867df3;
+          text-decoration: none;
+        }
+
+        .link-arrow {
+          padding-top: 0;
+          padding-bottom: 0;
+          padding-left: 4px;
+          float: right;
+          -webkit-align-self: auto;
+          -ms-flex-item-align: auto;
+          -ms-grid-row-align: auto;
+          align-self: auto;
+          border-style: none;
+          border-width: 0;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 769px) {
+    padding: 80px 40px;
+    .global-container {
+      .columns-module {
+        .column-module {
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 376px) {
+    padding: 80px 24px;
+    .global-container {
+      .heading.small {
+        font-size: 26px;
+      }
+      .columns-module {
+        .column-module {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
