@@ -1344,6 +1344,36 @@ body {
         }
       }
     }
+
+    @media screen and (max-width: 376px) {
+      padding: 60px 24px;
+      .container {
+        .blog-section-items {
+          h2.header {
+            font-size: 30px;
+            text-align: center;
+          }
+          .blog-items {
+            .blog-item {
+              width: 100%;
+              margin-bottom: 2rem;
+            }
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 769px) {
+      padding: 60px 24px;
+      .container {
+        .blog-section-items {
+          h2.header {
+            font-size: 30px;
+            text-align: center;
+          }
+        }
+      }
+    }
   }
 
   // FOOTER
