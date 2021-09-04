@@ -4,6 +4,21 @@
   min-height: 100vh;
   .login-container {
     height: 100vh;
+    .logo-sm {
+      display: none;
+      -webkit-box-align: center;
+      align-items: center;
+      padding-left: 1.5rem;
+      cursor: pointer;
+      height: 100px;
+
+      .logo-sm-left {
+        margin-right: 10px;
+      }
+    }
+    .logo-sm.active {
+      display: flex;
+    }
     .left-side {
       height: auto;
       .aside {
@@ -75,7 +90,8 @@
           font-size: 32px;
           line-height: 140%;
           font-family: Inter, sans-serif;
-          font-weight: 600;
+          font-weight: 700;
+          width: 350px;
           --tw-text-opacity: 1;
           color: rgba(15, 13, 30, var(--tw-text-opacity));
         }
@@ -86,6 +102,7 @@
           color: rgba(15, 13, 30, var(--tw-text-opacity));
           font-family: Inter, sans-serif;
           font-size: 16px;
+          width: 350px;
           line-height: 150%;
           font-weight: 400;
         }
@@ -99,16 +116,35 @@
           border-color: rgba(235, 234, 245, var(--tw-border-opacity));
           margin-top: 40px;
           padding-bottom: 40px;
-          width: 35%;
+          width: 350px;
           label {
             color: $color-black;
           }
+          .input-div {
+            border-width: 1px;
+            --tw-border-opacity: 1;
+            border-color: rgba(173, 170, 191, var(--tw-border-opacity));
+            --tw-bg-opacity: 1;
+            background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+            transition-property: background-color, border-color, color, fill,
+              stroke;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 100ms;
+            font-family: Inter, sans-serif;
+            --tw-text-opacity: 1;
+            color: rgba(15, 13, 30, var(--tw-text-opacity));
+            border-radius: 4px;
+            width: 100%;
+          }
+
           input {
             margin-top: 5px;
             margin-bottom: 20px;
-            height: 40px;
-            padding: 0.7rem;
-            outline: none;
+            font-size: 16px;
+            line-height: 150%;
+            padding: 0.5rem 1rem;
+            width: 100%;
+            border-radius: 4px;
           }
 
           .button-primary-bigger {
@@ -140,6 +176,7 @@
           }
         }
         .dont-have {
+          width: 350px;
           margin-top: 32px;
           --tw-text-opacity: 1;
           color: rgba(15, 13, 30, var(--tw-text-opacity));
@@ -160,6 +197,25 @@
             font-family: Inter, sans-serif;
             text-underline-position: under;
           }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1079px) {
+    .login-container {
+      height: auto;
+      .logo-sm {
+        display: flex;
+      }
+      .left-side {
+        display: none;
+      }
+      .right-side {
+        margin: 0 auto;
+
+        .login-form-sec {
+          padding-top: 60px;
         }
       }
     }
