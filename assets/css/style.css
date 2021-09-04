@@ -6898,6 +6898,7 @@ body {
           line-height: 150%;
           font-weight: 300; }
         body header .responsive-nav-container .dropdown-nav .responsive-nav-links .responsive-dropdown-content {
+          display: none;
           overflow: auto;
           max-height: 85vh;
           margin-top: 8px;
@@ -6919,7 +6920,10 @@ body {
                 font-size: 16px;
                 line-height: 150%;
                 font-weight: 300; }
+        body header .responsive-nav-container .dropdown-nav .responsive-nav-links .responsive-dropdown-content.active {
+          display: block; }
         body header .responsive-nav-container .dropdown-nav .responsive-nav-links .responsive-dropdown-content-2 {
+          display: none;
           overflow: auto;
           max-height: 85vh;
           margin-top: 8px;
@@ -6950,10 +6954,16 @@ body {
             font-size: 18px;
             line-height: 26px;
             font-weight: 600; }
+        body header .responsive-nav-container .dropdown-nav .responsive-nav-links .responsive-dropdown-content-2.active {
+          display: block; }
         body header .responsive-nav-container .dropdown-nav .responsive-nav-links .buttons {
           display: flex;
           justify-content: center;
           align-items: center; }
+      body header .responsive-nav-container .responsive-dropdown-arrow {
+        transition: all 0.4s; }
+      body header .responsive-nav-container .responsive-dropdown-arrow.active {
+        transform: rotate(180deg); }
     body header .responsive-nav-container.active {
       display: block; }
     @media screen and (max-width: 991px) {

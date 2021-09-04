@@ -5,7 +5,6 @@ const dropdownArrow = document.querySelector(".dropdown-arrow");
 
 dropdownContainer.forEach(dropDown => {
     dropDown.addEventListener("click", function () {
-        // dropDown.nextElementSibling.style.height = dropDown.nextElementSibling.scrollHeight + 'px'; // explore scroll height 
         dropDown.nextElementSibling.classList.toggle("active");
         dropDown.firstElementChild.classList.toggle("active");
     })
@@ -15,11 +14,21 @@ dropdownContainer.forEach(dropDown => {
 
 const hamburgerBtn = document.querySelector(".hamburger-icon");
 const responsiveNavigation = document.querySelector(".responsive-nav-container");
+const responsiveDropdownContainer = document.querySelectorAll(".responsive-dropdown-container");
+const responsiveDropdownArrow = document.querySelector(".responsive-dropdown-arrow");
 
+// Opens responsive nav
 hamburgerBtn.addEventListener("click", function (e) {
     responsiveNavigation.classList.toggle("active");
-})
 
+});
+
+responsiveDropdownContainer.forEach(responsiveDropdown => {
+    responsiveDropdown.addEventListener("click", function () {
+        responsiveDropdown.nextElementSibling.classList.toggle("active");
+        responsiveDropdown.lastElementChild.classList.toggle("active");
+    })
+});
 // Testimonials select JS
 
 const testimonialPictures = Array.from(document.querySelectorAll('.testimonials-pictures li'));

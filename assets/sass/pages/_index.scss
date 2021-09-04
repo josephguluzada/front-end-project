@@ -163,6 +163,7 @@ body {
             font-weight: 300;
           }
           .responsive-dropdown-content {
+            display: none;
             overflow: auto;
             max-height: 85vh;
             margin-top: 8px;
@@ -189,8 +190,12 @@ body {
               }
             }
           }
+          .responsive-dropdown-content.active {
+            display: block;
+          }
 
           .responsive-dropdown-content-2 {
+            display: none;
             overflow: auto;
             max-height: 85vh;
             margin-top: 8px;
@@ -227,12 +232,22 @@ body {
               font-weight: 600;
             }
           }
+          .responsive-dropdown-content-2.active {
+            display: block;
+          }
           .buttons {
             display: flex;
             justify-content: center;
             align-items: center;
           }
         }
+      }
+
+      .responsive-dropdown-arrow {
+        transition: all 0.4s;
+      }
+      .responsive-dropdown-arrow.active {
+        transform: rotate(180deg);
       }
     }
     .responsive-nav-container.active {
