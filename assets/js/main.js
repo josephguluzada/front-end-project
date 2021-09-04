@@ -11,6 +11,14 @@ dropdownContainer.forEach(dropDown => {
     })
 })
 
+// RESPONSIVE DROPDOWN CONTAINER SLIDE
+
+const hamburgerBtn = document.querySelector(".hamburger-icon");
+const responsiveNavigation = document.querySelector(".responsive-nav-container");
+
+hamburgerBtn.addEventListener("click", function (e) {
+    responsiveNavigation.classList.toggle("active");
+})
 
 // Testimonials select JS
 

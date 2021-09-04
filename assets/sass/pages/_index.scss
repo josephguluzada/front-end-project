@@ -9,6 +9,9 @@ body {
     z-index: 100000000000000000000000000;
     background-color: $color-primary;
     font-weight: 300;
+    .container {
+      position: relative;
+    }
     .nav-logo {
       a {
         img {
@@ -112,44 +115,164 @@ body {
       }
     }
 
-    //RESPONSIVE DESIGN FOR HEADER
-    @media screen and (min-width: 991) {
-      .container {
-        max-width: 95%;
+    .responsive-nav-container {
+      display: none;
+      max-width: 990px;
+      min-height: 100vw;
+      background-color: $color-secondary;
+      height: 100vh;
+      position: absolute;
+      overflow: hidden;
+      top: 100%;
+      left: 0;
+      right: 0;
+      width: 100%;
+      .dropdown-nav {
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: auto;
+        overflow: auto;
+        max-height: 100vh;
+        min-height: 100vh;
+        margin-bottom: 0;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background-color: #1b1734;
+
+        .responsive-nav-links {
+          .responsive-nav-link,
+          .responsive-dropdown-container {
+            margin-left: 8px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-left: 20px;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 16px;
+            line-height: 150%;
+            font-weight: 300;
+          }
+          .responsive-dropdown-content {
+            overflow: auto;
+            max-height: 85vh;
+            margin-top: 8px;
+            padding: 0 16px;
+            border-radius: 8px;
+
+            .content-container {
+              width: 736px;
+              overflow: hidden;
+              padding-top: 24px;
+              padding-bottom: 24px;
+              .content-links {
+                width: 100%;
+                .content-link {
+                  padding-top: 12px;
+                  padding-bottom: 12px;
+                  padding-left: 56px;
+                  background-color: #1b1734;
+                  color: #fff;
+                  font-size: 16px;
+                  line-height: 150%;
+                  font-weight: 300;
+                }
+              }
+            }
+          }
+
+          .responsive-dropdown-content-2 {
+            overflow: auto;
+            max-height: 85vh;
+            margin-top: 8px;
+            padding: 0 16px;
+            border-radius: 8px;
+
+            .content-container {
+              width: 736px;
+              overflow: hidden;
+              padding-top: 24px;
+              padding-bottom: 24px;
+              .content-links {
+                width: 100%;
+                .content-link {
+                  padding-top: 12px;
+                  padding-bottom: 12px;
+                  padding-left: 56px;
+                  background-color: #1b1734;
+                  color: #fff;
+                  font-size: 16px;
+                  line-height: 150%;
+                  font-weight: 300;
+                }
+              }
+            }
+            .bold-link {
+              display: inline-block;
+              margin-bottom: 16px;
+              padding-top: 0;
+              padding-bottom: 4px;
+              padding-left: 0;
+              font-size: 18px;
+              line-height: 26px;
+              font-weight: 600;
+            }
+          }
+          .buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
       }
     }
-    @media screen and (max-width: 991px) {
-      .container {
-        position: relative;
-        max-width: 95%;
-      }
-      .navbar {
-        display: none;
-      }
-      .hamburger-icon {
-        position: absolute;
-        top: 21%;
-        left: 34%;
-        display: block;
-        margin-left: auto;
-        text-align: right;
-      }
-      .nav-logo {
-        width: 25%;
-      }
+    .responsive-nav-container.active {
+      display: block;
     }
 
-    @media screen and (max-width: 1200px) {
-      .custom-padding {
-        padding: 1rem 0.5rem;
-        cursor: pointer;
-      }
-    }
-    @media screen and (min-width: 1400px) {
-      .nav-logo {
-        width: 15%;
-        img {
+    //RESPONSIVE DESIGN FOR HEADER
+    @media screen and (max-width: 991px) {
+      padding: 4px 48px;
+      width: 100%;
+      .container {
+        padding: 8px 0;
+        // min-width: 900px;
+        .row {
+          height: 60px;
           width: 100%;
+          margin: 0 auto;
+          .nav-logo {
+            width: 20%;
+            a {
+              img {
+                vertical-align: middle;
+                display: inline-block;
+                max-width: 100%;
+                padding-top: 0;
+                padding-bottom: 0;
+                border: 1px transparent;
+                border-radius: 16px;
+              }
+            }
+          }
+          nav {
+            display: none;
+          }
+
+          .hamburger-icon {
+            display: block;
+            width: 5%;
+            margin-left: auto;
+          }
         }
       }
     }
